@@ -39,4 +39,6 @@ Tips for setting up your environment can be found [here](https://classroom.udaci
 
 ## Reflection
 
-After implementing the base PID algorithm, tuning was done by fixing Ki and Kd and tunning Kp to get the car to turn across the track.  Kd and Ki was then increased to smooth out oscillations.  Kd seemed oscillate more than expected as the Kd and it became very obvious that speed had a big impact on stablity.  Then added a speed factor to slow the car once the error increases. 
+After implementing the base PID algorithm, tuning was done by using each parameter indiviually and observing the effect on the car.  Kd was used in isolation and the car would attempt to center itself on the track, but would oscillate.  Kd was added to so smooth out the oscillations.  The CTE still would get fairly high. Ki was used to manage in perfections of the car. It was increased that that also improved things a bit. Lastly it became very obvious that speed had a big impact on stablity.  Then added a speed factor to slow the car once the error increases and that allowed for the car to complete the track.
+
+Here is the video: [PID Video](https://youtu.be/R6WDS9xfwjQ)
